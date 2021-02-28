@@ -2,6 +2,7 @@ from django.shortcuts import render
 from .models import Problem
 from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
 from django.views.decorators.csrf import csrf_exempt
+import random
 
 # Create your views here.
 def story(request):
@@ -42,7 +43,7 @@ def push_count(request):
 
 def fetch_problems(request):
     problems = []
-    problem_list = Problem.objects.all()
+    problem_list = Problem.objects.all().order_by("?")
     #object_list = Film.objects.filter(reduce(lambda x, y: x | y, [Q(country__name__icontains=country) for country in countries]))
     #object_list = object_list.exclude(year__in=["2025","2024","2023","2022","2021"])
     #object_list = object_list.order_by('-year')

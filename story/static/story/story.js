@@ -126,8 +126,8 @@ class App extends React.Component {
         if (this.state.scene == -2){
             return this.renderOpinion();
         }
-        else if (this.state.num == 10) {
-            return this.renderSolution();
+        else if (this.state.scene == 3) {
+            return this.renderPerson();
         }
         else if (this.state.scene > -1) {
             return this.renderProblems();
@@ -179,8 +179,38 @@ class App extends React.Component {
         );
     }
 
+    renderPerson() {
+        document.body.style.background="linear-gradient(to right, #2980b9, #6dd5fa, #ffffff)";
+        return (
+            <div>
+            <div className="informer fc ac cent">
+                <div className="top_cent">
+                    <h3> WOW! Amanda also feels sad about that! </h3>
+                </div>
+                <div className="center cent">
+                    <span className="p_image">
+                        <img src="media/problem/999/poet_1.png"></img>
+                    </span>
+                    <h4 className="p_name"> Amanda Shelly (16) </h4>
+                    <span className="bg_name"></span>
+                </div>
+                <div className="responses fc">
+                    <div className="r_left">
+                        <p>Rant together</p>
+                        <button className="no_btn" name="sad" value={this.state.problem_id[this.state.scene]} onClick={e => this.gameBTN(e)}> <span role="img" aria-label="tear">👯</span> </button>
+                    </div>
+                    <div className="r_right cent ac">
+                        <p>Solve the problem together</p>
+                        <button className="yes_btn" name="happy" value={this.state.problem_id[this.state.scene]} onClick={e => this.gameBTN(e)}> <span role="img" aria-label="love">🚵</span> </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        );
+    }
+
     renderProblems() {
-        
+        document.body.style.background="white";
         return (
             <div>
                 <div className="informer fc ac cent">

@@ -1,0 +1,1 @@
+web: gunicorn smore.wsgi --log-file -

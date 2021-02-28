@@ -14,11 +14,7 @@ from pathlib import Path
 import os
 
 ALLOWED_HOSTS = [
-    '0.0.0.0',
     '127.0.0.1',
-    'bla-bla',
-    'heroku.com',
-    'herokuapp.com',
     'swipo.herokuapp.com'
 ]
 
@@ -34,8 +30,6 @@ SECRET_KEY = 'ic8x$(l-@%5sg!v@gj4v&6k78y-7y=#4auu$_@4h8tzubvc@36'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
-ALLOWED_HOSTS = []
 
 
 # Application definition

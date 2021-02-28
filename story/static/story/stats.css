@@ -1,0 +1,40 @@
+body{
+    font-family: futura, sans-serif;
+}
+
+.ac{
+    align-items:center;
+    justify-content:space-around;
+}
+
+.cent{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.fc{
+    display:flex;
+    flex-direction:column;
+}
+
+.fr{
+    display:flex;
+}
+
+.prob_gallery{
+    width:60%;
+    text-align:center;
+}
+
+.heads{
+    text-align:center;
+    margin:40px 0px;
+}
+
+.problem{
+    justify-self:flex-start;
+    padding:10px 80px;
+    margin-bottom:20px;
+    border:1px solid #e5e5e5;
+    border-radius:20px;
+}

@@ -1,0 +1,39 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="{% static 'story/stats.css' %}">
+    </head>
+
+    <body>
+        <div id="main_frame">
+            <div class="heads cent">
+                <h1> The Ranting Corner </h1>
+            </div>
+        <div class="prob_gallery fc ac cent">
+            {% for problem in problems %}
+            <div class="problem">
+                <span class="p_tt">
+                    <h5> {{problem.problem_name }} </h5>
+                </span>
+                <div class="count fr">
+                    <span class="p_happy">
+                    <p> &#128525 {{problem.happy_count }} &nbsp </p>
+                    </span>
+                    <span class="p_sad">
+                    <p> &#128557 {{problem.sad_count }} &nbsp </p>
+                    </span>
+                    <span class="p_idk">
+                    <p> &#10067 {{problem.idk_count }} &nbsp </p>
+                    </span>
+                </div>
+            </div>
+
+            {% endfor %}
+        </div>
+        </div>
+    </body>
+
+</html>

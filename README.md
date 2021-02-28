@@ -1,3 +1,6 @@
+Resources used: Python, Django, HTML / CSS, Heroku, Product Management
+
+Explanation: 
 Our team consists of three members, Pablo from Mexico, Hayoung from Korea, and Sadid from Bangladesh. And we are college students who are interested in technology and especially how it changes society.
 
 Take a guess on how many people in the US are aged between 10 and 18. 41 million. How many of those exercise the right to vote? 0.
